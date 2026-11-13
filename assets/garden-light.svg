@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Pietro Massaro: a garden that grows with what I write, code, study and live">
+  <style>
+    text { font-family: Georgia, "Times New Roman", serif; }
+    .sans, .sans text { font-family: -apple-system, "Segoe UI", Inter, Helvetica, Arial, sans-serif; }
+    .stelo { fill: none; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 220; stroke-dashoffset: 220; animation: cresce 1.6s ease-out forwards; }
+    .chioma, .foglia, .fiore { transform-box: fill-box; transform-origin: center bottom; transform: scale(0); animation: sboccia .8s cubic-bezier(.2,.9,.3,1.3) forwards; }
+    .foglia { transform-origin: center; }
+    .vento { transform-origin: 900px 268px; animation: vento 6s ease-in-out 3s infinite alternate; }
+    .frase { opacity: 0; animation: frasi 12s linear infinite; }
+    .f1 { animation-delay: 4s; }
+    .f2 { animation-delay: 8s; }
+    .titolo { opacity: 0; animation: appare 1s ease-out .2s forwards; }
+    @keyframes cresce { to { stroke-dashoffset: 0; } }
+    @keyframes sboccia { to { transform: scale(1); } }
+    @keyframes vento { from { transform: rotate(-0.6deg); } to { transform: rotate(0.6deg); } }
+    @keyframes appare { to { opacity: 1; } }
+    @keyframes frasi { 0% { opacity: 0; } 4% { opacity: 1; } 30% { opacity: 1; } 34% { opacity: 0; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .stelo { animation: none; stroke-dashoffset: 0; }
+      .chioma, .foglia, .fiore { animation: none; transform: none; }
+      .vento, .titolo { animation: none; opacity: 1; }
+      .frase { animation: none; opacity: 0; }
+      .f0 { opacity: 1; }
+    }
+  </style>
+  <rect width="1200" height="300" rx="18" fill="#F6F3EC"/>
+  <text class="sans" x="64" y="92" font-size="15" letter-spacing="2.5" fill="#5C645D">HEY THERE, I'M</text>
+  <text class="titolo" x="60" y="166" font-size="72" fill="#1D241F">Pietro Massaro</text>
+  <g class="sans">
+    <text class="frase f0" x="64" y="214" font-size="22" fill="#465048">Software engineer · Computer Engineering student</text>
+    <text class="frase f1" x="64" y="214" font-size="22" fill="#465048">Building a website that grows like a garden</text>
+    <text class="frase f2" x="64" y="214" font-size="22" fill="#465048">Django · Nuxt · Three.js · test-driven, privacy-first</text>
+  </g>
+  <path d="M640 268 H1176" stroke="#D8D0C0" stroke-width="2" stroke-linecap="round"/>
+  <g class="vento">
+    <path class="stelo" style="animation-delay:0.2s" d="M700 268 C 694 208.0, 706 163.0, 700 118" stroke="#2E5B43"/>
+    <circle class="chioma" style="animation-delay:1.3s" cx="700" cy="100" r="33" fill="#7E9A6B" opacity=".85"/>
+    <circle class="chioma" style="animation-delay:1.5s" cx="686" cy="114" r="22" fill="#2E5B43" opacity=".7"/>
+    <path class="stelo" style="animation-delay:0.8s" d="M790 268 C 784 230.0, 796 201.5, 790 173" stroke="#2E5B43"/>
+    <ellipse class="foglia" style="animation-delay:1.7s" cx="776" cy="225" rx="13" ry="5.5" transform="rotate(-35 776 225)" fill="#7E9A6B"/>
+    <ellipse class="foglia" style="animation-delay:1.9s" cx="804" cy="209" rx="13" ry="5.5" transform="rotate(35 804 209)" fill="#7E9A6B"/>
+    <path class="stelo" style="animation-delay:0.5s" d="M860 268 C 854 216.0, 866 177.0, 860 138" stroke="#2E5B43"/>
+    <ellipse class="foglia" style="animation-delay:1.4s" cx="846" cy="210" rx="13" ry="5.5" transform="rotate(-35 846 210)" fill="#7E9A6B"/>
+    <ellipse class="foglia" style="animation-delay:1.6s" cx="874" cy="187" rx="13" ry="5.5" transform="rotate(35 874 187)" fill="#7E9A6B"/>
+    <ellipse class="foglia" style="animation-delay:1.8s" cx="848" cy="164" rx="13" ry="5.5" transform="rotate(-30 848 164)" fill="#7E9A6B"/>
+    <path class="stelo" style="animation-delay:1.2s" d="M940 268 C 934 240.0, 946 219.0, 940 198" stroke="#2E5B43"/>
+    <g class="fiore" style="animation-delay:2.2s"><circle cx="940" cy="191" r="6" fill="#C9A646"/><circle cx="947" cy="198" r="6" fill="#C9A646"/><circle cx="940" cy="205" r="6" fill="#C9A646"/><circle cx="933" cy="198" r="6" fill="#C9A646"/><circle cx="940" cy="198" r="4" fill="#A3461F"/></g>
+    <path class="stelo" style="animation-delay:0.9s" d="M1010 268 C 1004 202.0, 1016 152.5, 1010 103" stroke="#2E5B43"/>
+    <circle class="chioma" style="animation-delay:2.0s" cx="1010" cy="85" r="36" fill="#7E9A6B" opacity=".85"/>
+    <circle class="chioma" style="animation-delay:2.2s" cx="996" cy="99" r="25" fill="#2E5B43" opacity=".7"/>
+    <path class="stelo" style="animation-delay:1.5s" d="M1090 268 C 1084 234.0, 1096 208.5, 1090 183" stroke="#2E5B43"/>
+    <ellipse class="foglia" style="animation-delay:2.4s" cx="1076" cy="230" rx="13" ry="5.5" transform="rotate(-35 1076 230)" fill="#7E9A6B"/>
+    <ellipse class="foglia" style="animation-delay:2.6s" cx="1104" cy="215" rx="13" ry="5.5" transform="rotate(35 1104 215)" fill="#7E9A6B"/>
+    <ellipse class="foglia" style="animation-delay:2.8s" cx="1078" cy="200" rx="13" ry="5.5" transform="rotate(-30 1078 200)" fill="#7E9A6B"/>
+    <path class="stelo" style="animation-delay:1.9s" d="M1150 268 C 1144 244.0, 1156 226.0, 1150 208" stroke="#2E5B43"/>
+    <g class="fiore" style="animation-delay:2.9s"><circle cx="1150" cy="201" r="6" fill="#C9A646"/><circle cx="1157" cy="208" r="6" fill="#C9A646"/><circle cx="1150" cy="215" r="6" fill="#C9A646"/><circle cx="1143" cy="208" r="6" fill="#C9A646"/><circle cx="1150" cy="208" r="4" fill="#A3461F"/></g>
+  </g>
+</svg>
